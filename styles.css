@@ -11,13 +11,55 @@ html {
 	padding-right: 150px;
 }
 
-#header, #footer {
+#header, #footer, .overlay {
 	height: 500px;
+	width: 100%;
 }
 
 #header {
-	background: skyblue;
-	text-align: center;
+	/*background: skyblue;*/
+	text-align: center;	
+	background-image: url(assets/OceanBanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+		
+}
+
+#header:after, #col2 div:first-child:after {
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: rgba(0,80,170,0.7);
+	z-index: -1;
+}
+
+#col2 {
+	position:relative;
+	z-index:-3;
+}
+
+#col2 div:first-child {
+	width:50px;
+	height:50px;
+	position:relative;
+}
+
+#col2 div:first-child:after {
+	border-radius:50%;
+}
+
+#col2 img:first-child {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	size: 100px;
+	z-index:-2;
+	position:relative;
 }
 
 .nav, .title, h2, .footGal {
