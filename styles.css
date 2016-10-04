@@ -27,7 +27,7 @@ html {
 		
 }
 
-#header:after, #col2 div:first-child:after {
+#header:after, #col2 div:first-child:after, .surferPic:after, .footGal1:after, .footGal2:after, .footGal3:after, .footGal4:after  {
 	content: "";
 	top: 0;
 	bottom: 0;
@@ -36,6 +36,7 @@ html {
 	position: absolute;
 	background-color: rgba(0,80,170,0.7);
 	z-index: -1;
+	transition: background-color 2s;
 }
 
 #col2 {
@@ -53,13 +54,25 @@ html {
 	border-radius:50%;
 }
 
-#col2 img:first-child {
+.surferProfilePic img:first-child {
 	height: 50px;
 	width: 50px;
 	border-radius: 100%;
 	size: 100px;
 	z-index:-2;
 	position:relative;
+}
+
+.surferPic {
+	height: 243px;
+	width: 100%;
+	background-size: 444px 300px;
+	background-repeat: no-repeat;
+	background-image: url(assets/paddleBoarder.jpg);
+	background-position-x: -160px;
+	background-position-y: -27px;
+	position: relative;
+	z-index:-2;
 }
 
 .nav, .title, h2, .footGal {
@@ -117,12 +130,53 @@ ul li:nth-child(3), ul li:nth-child(4) {
 	clear: both;
 	background: green;
 	padding-top: 10px;
+	position: relative;
+	z-index: -3;
 }
 
 .footGal {
 	height: 325px;
 	width: 25%;
 	float: left;
+	background-size: 480px 329px;
+	background-repeat: no-repeat;
+}
+
+.footGal1 {
+	background-image: url(assets/slaterSurferPic.jpg);
+	background-position-x: -152px;
+	position: relative;
+	z-index: -2;
+}
+
+.footGal2 {
+	background-image: url(assets/craftbeer.jpg);
+	background-position-x: -152px;
+	background-size: 480px 329px;
+	position: relative;
+	z-index: -2;
+}
+
+.footGal3 {
+	background-image: url(assets/zack.jpg);
+	background-position-x: -184px;
+	background-position-y: -30px;
+	background-size: 633px 358px;
+	position: relative;
+	z-index: -2;
+}
+
+.footGal4 {
+	background-image: url(assets/cocktails.jpg);
+	background-position-x: -152px;
+	background-size: 480px 329px;
+	position: relative;
+	z-index: -2;
+}
+
+.footGal1:hover:after {
+	background-color: transparent;	
+		
 }
 
 h1, li, h2, h3, h4, h5, .footGal {
