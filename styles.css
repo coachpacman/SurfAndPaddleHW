@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 *, *:before, *:after {
@@ -76,26 +77,29 @@ html {
 }
 
 .nav, .title, h2, .footGal {
-	color: darkblue;
+	color: #083451
 }
 
 .title {
 	margin-top: 157px;
+
 }
 
 h1 {
 	color: white;
-	font-size: 100px;
+	font-size: 80px;
 	margin: 0;
 }
 
 h2 {
 	font-size: 50px;
+	margin: 20px;
 }
 
 li {
 	list-style: none;
 	margin-right: 10px;
+	margin-top: 15px;
 }
 
 ul li:first-child, ul li:nth-child(2) {
@@ -112,11 +116,12 @@ ul li:nth-child(3), ul li:nth-child(4) {
 }
 
 #body {
+	height: 787px;
 }
 
 #col1 {
 	width: 70%;
-	background: red;
+	/*background: red;*/
 	float: left;
 }
 
@@ -127,9 +132,9 @@ ul li:nth-child(3), ul li:nth-child(4) {
 }
 
 #footer {
+	border-top: 1px solid #E4EAEC;
 	clear: both;
-	background: green;
-	padding-top: 10px;
+	/*background: green;*/
 	position: relative;
 	z-index: -3;
 }
